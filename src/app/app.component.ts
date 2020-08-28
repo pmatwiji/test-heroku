@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Clase01';
+
+  edadUno: number = 0;
+  edadDos: number = 0;
+
 }
