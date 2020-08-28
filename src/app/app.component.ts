@@ -8,7 +8,22 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Clase01';
 
-  edadUno: number = 0;
-  edadDos: number = 0;
+  edadUno: number;
+  edadDos: number;
+  suma : number = 0;
+  promedio : number = 0;
+
+
+  calcular(){
+    this.suma = this.edadUno + this.edadDos;
+    this.promedio = this.suma / 2;
+  }
+
+  limpiar(){
+    this.edadUno = null;
+    this.edadDos = null;
+    this.suma = 0;
+    this.promedio = 0;
+  }
 
 }

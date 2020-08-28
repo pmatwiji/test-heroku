@@ -4,7 +4,10 @@
 <label>Edad Dos: </label>
 <input type="number" [(ngModel)]="edadDos">
 <br>
-<h1>Promedio: {{(edadUno + edadDos) / 2 }}</h1>
-<h1>Suma:  {{edadUno + edadDos}}</h1>
+<h1>Promedio: {{promedio}}</h1>
+<h1>Suma:  {{suma}}</h1>
+
+<button (click)="calcular()">Calcular</button>
+<button (click)="limpiar()">Limpiar</button>
 
 <router-outlet></router-outlet>
